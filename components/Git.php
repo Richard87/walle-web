@@ -62,6 +62,7 @@ class Git extends Command {
         $destination = Project::getDeployFromDir();
         // 先更新，其实没有必要更新
         ///$this->updateRepo('master', $destination);
+        $cmd[] = sprintf('mkdir -p %s', $destination);
         $cmd[] = sprintf('cd %s ', $destination);
         $cmd[] = '/usr/bin/env git pull -a';
         $cmd[] = '/usr/bin/env git branch -a';
