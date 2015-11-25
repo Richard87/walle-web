@@ -94,7 +94,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <![endif]-->
 
 <script type="text/javascript">
-    if("ontouchend" in document) document.write("<script src='/dist/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+    //if("ontouchend" in document) document.write("<script src='/dist/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 </script>
 
 <!-- inline scripts related to this page -->
